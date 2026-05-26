@@ -19,19 +19,24 @@
 Для того, чтобы оценить пригодность набора данных для дальнейшего анализа было принято решение графически оценить цикличность изменения экспрессии генов *CLOCK*, *BMAL1*, *PER1*, *PER2*, *CRY1* и *CRY2*. Данные гены являются "маркерными" для анализа суточной эксперссии, так они задают петлю транскрипции-трансляции и запускают транскрипцию "ритмичных генов". Скрипт показал, что ген *BMAL1* отсутствует в выбранном датасете. Таким образом, анализ гена *BMAL1* было решено пропустить. Анализ остальных генов показал, что паттерн суточной экспрессии сохранялся (рис. 1-5). На основе этого был сделан вывод о пригодности набора данных для дальшейшего анализа.
 
 ![Экспрессия гена CLOCK](https://github.com/Vanyush/bioinf_workshop/blob/main/CLOCK_expr_plot.png)
-*Рисунок 1 - Грфик экспрессии гена CLOCK*
+
+*Рисунок 1 - График экспрессии гена CLOCK*
 
 ![Экпрессия гена CRY1](https://github.com/Vanyush/bioinf_workshop/blob/main/CRY1_expr_plot.png)
-*Рисунок 2 - Грфик экспрессии гена CRY1*
+
+*Рисунок 2 - График экспрессии гена CRY1*
 
 ![Экпрессия гена CRY2](https://github.com/Vanyush/bioinf_workshop/blob/main/CRY2_expr_plot.png)
-*Рисунок 3 - Грфик экспрессии гена CRY2*
+
+*Рисунок 3 - График экспрессии гена CRY2*
 
 ![Экпрессия гена PER1](https://github.com/Vanyush/bioinf_workshop/blob/main/PER1_expr_plot.png)
-*Рисунок 4 - Грфик экспрессии гена PER1*
+
+*Рисунок 4 - График экспрессии гена PER1*
 
 ![Экпрессия гена CRY1](https://github.com/Vanyush/bioinf_workshop/blob/main/PER2_expr_plot.png)
-*Рисунок 5 - Грфик экспрессии гена PER2*
+
+*Рисунок 5 - График экспрессии гена PER2*
 ## Источники:
 1. Rey G, Valekunja UK, Feeney KA, Wulund L, Milev NB, Stangherlin A, Ansel-Bollepalli L, Velagapudi V, O'Neill JS, Reddy AB. The Pentose Phosphate Pathway Regulates the Circadian Clock. Cell Metab. 2016 Sep 13;24(3):462-473. doi: 10.1016/j.cmet.2016.07.024. Epub 2016 Aug 18. PMID: 27546460; PMCID: PMC5031559.
 2. Buhr ED, Takahashi JS. Molecular components of the Mammalian circadian clock. Handb Exp Pharmacol. 2013;(217):3-27. doi: 10.1007/978-3-642-25950-0_1. PMID: 23604473; PMCID: PMC3762864.
