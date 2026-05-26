@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 
 
-def parse_raw_data(expr_table, attr_table):
+def parse_raw_data(expr_table, attr_table) -> pd.DataFrame:
     df = pd.read_csv(expr_table, sep="\t")
     names = pd.read_csv(attr_table, sep='\t')['gene_short_name']
     time_samples = df.columns[1:]
@@ -22,12 +22,12 @@ def parse_raw_data(expr_table, attr_table):
     return df
 
 
-def expr_log(df):
+def expr_log(df) -> pd.DataFrame:
     expr_log = np.log2(df + 1)
     return expr_log
 
 
-def plot_gene(expr_log_df, gene):
+def gene_plot(expr_log_df, gene):
     if gene not in df.index:
         print(f'Gene {gene} is not provided by dataset')
     else:
@@ -44,5 +44,5 @@ def plot_gene(expr_log_df, gene):
 df = parse_raw_data('GSE74439_DMSO_genes.fpkm_table.txt', 'GSE74439_DMSO_genes.attr_table.txt')
 expr_log = expr_log(df)
 for gene in ['CLOCK', 'BMAL1', 'PER1', 'PER2', 'CRY1', 'CRY2']:
-    plot_gene(expr_log, gene)
+    gene_plot(expr_log, gene)
 expr_log.to_csv('expr_log.tsv', sep='\t')
