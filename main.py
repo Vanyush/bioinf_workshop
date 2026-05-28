@@ -68,7 +68,7 @@ def fit_gene(times, values):
 
         r2 = 1 - ss_res / ss_tot
         n = len(values)
-        p = 3  # A, phi, C
+        p = 3
 
         df1 = p - 1
         df2 = n - p
